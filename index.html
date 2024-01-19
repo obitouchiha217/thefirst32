@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Shopping Website</title>
+    <style>
+        .slideshow {
+    width: 100%;
+    position: relative;
+}
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.product-card {
+    /* Other styles */
+    animation: slide-in 1s ease-out;
+}
+.product-card {
+    /* Other styles */
+    animation: slide-in 1s ease-out;
+}
+.slide {
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+#site-search {
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background: #f1f1f1; /* Light grey background */
+}
+
+#site-search:focus {
+    background-color: #ddd; /* Lighter grey background when focused */
+    outline: none; /* Remove the default outline */
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex; /* Make the container a flex container */
+    flex-wrap: wrap; /* Allow the product cards to wrap to the next line on small screens */
+        }
+        .product-card {
+            width: 20%; /* Make the product cards take up about half the container's width */
+    /* Other styles */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 2px;
+            margin-bottom: 2px;
+            margin-right: 0; /* Remove space to the right of the product cards */
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100px; /* Width of the card */
+    text-align: center; /* Center the text and images */
+}
+@media (min-width: 600px) {
+    .product-card {
+        width: 48%; /* Half width (minus a little for margin) on medium screens and up */
+        margin-right: 4%; /* Space between cards */
+    }
+}
+
+@media (min-width: 900px) {
+    .product-card {
+        border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Rounded corners */
+        width: 31%; /* One third width (minus a little for margin) on large screens and up */
+        transition: transform 0.3s ease; /* Smooth transition */
+        width: 200px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    }
+}
+        .product-card h2 {
+            color: #333;
+            margin-bottom: 10px; /* Space below the product name */
+        }
+        .product-card button {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product-card:hover {
+    transform: scale(1.05); /* Scale up the product card */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow for depth */
+}
+        .product-card p {
+    color: #666; /* Dark gray text color for the product description */
+    margin-bottom: 15px; /* Space below the product description */
+}
+
+.product-card button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Space inside the button */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change the cursor when hovering over the button */
+}
+
+.product-card img {
+    position: relative;
+}
+
+.product-card img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+}
+.product-card button:hover {
+    background-color: #ff7f50; /* Change the button color on hover */
+}
+        .product-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px; /* Space below the image */
+        }
+        /* Styles for navigation menu */
+.nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex; /* Added */
+    justify-content: left; /* Added */
+    padding: 0.5em 0; /* Added */
+}
+@keyframes theater {
+    0%, 100% { color: #ff6347; text-shadow: none; }
+    25% { color: #ff0000; text-shadow: 2px 2px 4px #000000; }
+    50% { color: #ffff00; text-shadow: 3px 3px 6px #000000; }
+    75% { color: #00ff00; text-shadow: 4px 4px 8px #000000; }
+}
+.website-name {
+    /* Styles for "DRKZONE" */
+    padding: 10px;
+    font-weight: bold;
+    margin-right: 20px; /* Add a margin to the right */
+    color: #ff6347; /* Change the text color */
+    font-size: 24px; /* Increase the font size */
+    font-family: 'Arial', sans-serif; /* Change the font */
+    text-transform: uppercase; /* Make the text uppercase */
+    animation: theater 3s infinite;
+}
+#site-search {
+    margin-right: 10000 px; /* Add a margin to the left */
+    padding: 8px;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background: #f1f1f1; /* Light grey background */#site-search {
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background: #f1f1f1; /* Light grey background */
+}
+
+#site-search:focus {
+    background-color: #ddd; /* Lighter grey background when focused */
+    outline: none; /* Remove the default outline */
+}
+}
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease; /* Added */
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="website-name">DRKZONE</div>
+       
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <input type="search" id="site-search" name="q" aria-label="Search through site content"> <!-- Search bar -->
+    </div>
+    <div class="container">
+        
+        <div class="product-card">
+            <h2>Iphone 15 Pro Max</h2>
+            
+            <img src="prod 1.jfif" alt="Product 1">
+            <p>Description of product 1</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <h2>Apples</h2>
+            <img src="prod 2.jfif" alt="Product 2">
+            <p>Description of product 2</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+    <div class="slideshow">
+        <div class="slide">
+            <img src="prod 1.jfif" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Product 1 description</p>
+        </div>
+        <div class="slide">
+            <img src="prod 2.jfif" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Product 2 description</p>
+        </div>
+        <!-- More slides -->
+    </div>
+   <script> let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide); // Show the first slide
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+</body>
+</html>
